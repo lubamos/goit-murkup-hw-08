@@ -35,7 +35,6 @@ p {
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -136,7 +135,6 @@ body {
 
 .hero-overlay__button {
   display: inline-block;
-  cursor: pointer;
   padding: 10px 32px;
   border-radius: 4px;
   min-width: 200px;
@@ -154,7 +152,7 @@ body {
 }
 
 .hero-overlay__button:hover, .hero-overlay__button:focus {
-  background-color: var(--hero-button-fover);
+  background-color: #188ce8;
 }
 
 .features {
@@ -225,12 +223,20 @@ h3 {
   text-align: center;
 }
 
-.employees {
+.section-employees {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--team-background);
   width: 480px;
+  text-align: center;
 }
 
-.section-employees__title {
-  text-align: center;
+.section-employeestitle {
+  margin-bottom: 30px;
+}
+
+.employees {
+  width: 480px;
 }
 
 .employees__item {
@@ -243,10 +249,6 @@ h3 {
 
 .employees__item:last-child {
   margin-bottom: 0;
-}
-
-.section-employees {
-  background-color: var(--team-background);
 }
 
 .employees {
@@ -322,20 +324,21 @@ h3 {
 }
 
 .employees-soc__link:hover, .employees-soc__link:focus {
-  background-color: var(--hover-color);
-  fill: var(--body-background-color);
+  background-color: #2196f3;
+  fill: #fff;
 }
 
 .section-clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline: 2px solid tomato;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -343,22 +346,27 @@ h3 {
 
 .clients__item {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.clients__item:last-child {
+.clients__item:nth-child(2n) {
   margin-right: 0;
 }
 
+.clients__item:nth-last-child(-n + 2) {
+  margin-bottom: 0;
+}
+
 .clients__icon {
-  width: 106px;
-  height: 60px;
+  width: 210px;
+  height: 92px;
 }
 
 .clients__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 170px;
+  width: 210px;
   height: 92px;
   -webkit-box-align: center;
       -ms-flex-align: center;

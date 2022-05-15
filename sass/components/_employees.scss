@@ -1,14 +1,22 @@
+.section-employees {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--team-background);
+
+  width: 480px;
+  text-align: center;
+
+  &title {
+    margin-bottom: 30px;
+  }
+}
 .employees {
   width: 480px;
+
   // display: flex;
   // flex-wrap: wrap;
 }
-.section-employees {
-  width: 480px;
-}
-&title {
-  text-align: center;
-}
+
 .employees__item {
   width: 450px;
   margin-bottom: 30px;
@@ -19,12 +27,6 @@
   &:last-child {
     margin-bottom: 0;
   }
-}
-
-.section-employees {
-  // padding-top: 94px;
-  // padding-bottom: 94px;
-  background-color: var(--team-background);
 }
 
 .employees {
@@ -92,7 +94,7 @@
 .employees-soc__link {
   &:hover,
   &:focus {
-    background-color: var(--hover-color);
-    fill: var(--body-background-color);
+    background-color: $hoverColor;
+    fill: $white;
   }
 }
