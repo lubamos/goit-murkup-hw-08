@@ -1,0 +1,30 @@
+.footer-address__item {
+  margin-bottom: 9px;
+}
+.footer-address:nth-last-child(1) {
+  margin-bottom: 0;
+}
+.footer-address {
+  display: inline-block;
+  list-style: none;
+  color: var(--footer-text);
+  text-decoration: none;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1.71;
+}
+
+.footer-address__link {
+  list-style: none;
+  color: var(--footer-text-transp);
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-address__link {
+  &:hover,
+  &:focus {
+    color: var(--hover-color);
+  }
+}
